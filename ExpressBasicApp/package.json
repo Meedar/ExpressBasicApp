@@ -1,0 +1,15 @@
+{
+  "name": "express-basic-app",
+  "version": "0.0.0",
+  "description": "ExpressBasicApp",
+  "main": "app.js",
+  "author": {
+    "name": "anx8101",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
