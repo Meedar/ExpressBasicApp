@@ -1,5 +1,5 @@
 function list(req, res) {
-    res.send("respond with a resource");
+    res.render('users', { title: 'Users page' });
 }
 exports.list = list;
 ;

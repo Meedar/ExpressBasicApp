@@ -1,6 +1,6 @@
-var nameApplication = "Express Basic Application";
+var title = "Index page";
 function index(req, res) {
-    res.render('index', { toto: nameApplication.toString() });
+    res.render('index', { title: title.toString() });
 }
 exports.index = index;
 ;
