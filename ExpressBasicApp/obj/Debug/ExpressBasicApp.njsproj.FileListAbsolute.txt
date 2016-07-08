@@ -1,4 +1,3 @@
 C:\Personal Projects\ExpressBasicApp\ExpressBasicApp\obj\Debug\ExpressBasicApp.njsprojResolveAssemblyReference.cache
 C:\Personal Projects\ExpressBasicApp\ExpressBasicApp\bin\Microsoft.NodejsTools.WebRole.dll
-D:\Development\Git\ExpressBasicApp\ExpressBasicApp\obj\Debug\ExpressBasicApp.njsprojResolveAssemblyReference.cache
 D:\Development\Git\ExpressBasicApp\ExpressBasicApp\bin\Microsoft.NodejsTools.WebRole.dll
