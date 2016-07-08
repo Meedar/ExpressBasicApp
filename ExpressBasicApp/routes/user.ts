@@ -4,5 +4,10 @@
 import express = require('express');
 
 export function list(req: express.Request, res: express.Response) {
-    res.render('users', { title: 'Users page' });
+    var responseJson =
+        {
+            title: 'Bienvenue dans mon objet Json',
+            message: 'Ben ça marche en plus !!'
+        };
+    res.json(responseJson);
 };
