@@ -1,5 +1,9 @@
 function list(req, res) {
-    res.render('users', { title: 'Users page' });
+    var responseJson = {
+        title: 'Bienvenue dans mon objet Json',
+        message: 'Ben ça marche en plus !!'
+    };
+    res.json(responseJson);
 }
 exports.list = list;
 ;
