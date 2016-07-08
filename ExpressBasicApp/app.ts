@@ -1,9 +1,11 @@
 ﻿import express = require('express');
-import routes = require('./routes/index');
-import user = require('./routes/user');
+import indexApi = require('./api/index');
+import booksApi = require('./api/books');
 import path = require('path');
 
+
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -25,8 +27,8 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/', indexApi.index);
+app.get('/books', booksApi.list);
 
 app.listen(app.get('port'), function () {
     console.log('Express server lunch by gulp listening on port ' + app.get('port'));

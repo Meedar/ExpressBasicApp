@@ -1,5 +1,6 @@
 ﻿var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    mongoose = require('mongoose');
 
 gulp.task('default', function () {
     nodemon(
