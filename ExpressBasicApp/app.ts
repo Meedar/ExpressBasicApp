@@ -3,8 +3,9 @@ import indexApi = require('./api/index');
 import booksApi = require('./api/books');
 import path = require('path');
 
-
+var mongoose = require('mongoose');
 var app = express();
+
 
 
 // all environments
@@ -28,7 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', indexApi.index);
-app.get('/books', booksApi.list);
+app.get('/api/books', booksApi.list);
 
 app.listen(app.get('port'), function () {
     console.log('Express server lunch by gulp listening on port ' + app.get('port'));
