@@ -2,6 +2,8 @@
     Schema = mongoose.Schema;
 
 var bookModel = new Schema({
-    Titles: 'string',
-    Author: 'string'
+    title: { type: String },
+    author: { type: String }
 });
+
+module.exports = mongoose.model('books', bookModel);

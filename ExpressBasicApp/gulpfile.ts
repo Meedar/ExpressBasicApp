@@ -1,6 +1,5 @@
 ﻿var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon'),
-    mongoose = require('mongoose');
+    nodemon = require('gulp-nodemon');
 
 gulp.task('default', function () {
     nodemon(
@@ -10,7 +9,7 @@ gulp.task('default', function () {
         env: {
             PORT: 8000
         },
-        //ignore: ['./node_modules/**']
+        ignore: ['./node_modules/**']
     })
     .on('restart', function () {
         console.log('Restarting ...');
